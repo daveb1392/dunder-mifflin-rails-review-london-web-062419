@@ -1,0 +1,12 @@
+<div>
+<img src="<%= @employee.img_url%>"> <!-- image tag @employee.img_url -->
+</div>
+<h3>First Name: <%= @employee.first_name %></h3>
+<h3>Last Name: <%= @employee.last_name %><h3>
+<h3>Alias: <%= @employee.alias %></h3>
+<h3>Job Title: <%= @employee.title %></h3>
+<h3>Dogs: <%= link_to @employee.dog.name, @employee.dog %> </h3>
+<%= link_to 'Back', employees_path %>
+<%= link_to 'Edit', edit_employee_path(@employee) %>
+
+
